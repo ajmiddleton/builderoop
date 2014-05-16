@@ -1,0 +1,8 @@
+.tree-container(data-id=tree._id.toString())
+  .tree(class=tree.getClass())
+    .height #{(tree.height/12).toFixed(2)} Ft
+  .controls
+    if tree.isGrowable
+      button.grow Grow
+    if tree.isChoppable
+      button.chop Chop

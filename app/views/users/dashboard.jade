@@ -1,0 +1,10 @@
+#dashboard
+  #user(data-id=user._id.toString())= user.username
+  #wood Wood: #{user.wood.toFixed(2)}
+  #cash $: #{user.cash.toFixed(2)}
+  button#plant.button.button-action Plant Seed
+  button#getForest.button.button-action Get Forest
+  input#woodAmt
+  button#sellWood.button.button-action Sell Wood
+  if user.isAutoGrowAvailable
+    button#purchase-autogrow.button.button-highlight Purchase Auto Grow

@@ -1,0 +1,13 @@
+extends ../shared/template
+
+block content
+  h1 Builder
+
+  #controls
+    input#username(type='text', autofocus=true, placeholder='Username')
+    button#login.button.button-action Login
+    button#plant.button.button-action Plant Seed
+  #dashboard
+  #forest
+block scripts
+  script(src='/js/es6/compiled/game.js')
